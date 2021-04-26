@@ -49,8 +49,8 @@ void ProcesarArray(void){
             if(ArrayProc[4]=='1') 
             {
                 SendSerial("Temperatura cambiada");
-                max = ((ArrayProc[12]*10)+ ArrayProc[13]);
-                min = ((ArrayProc[15]*10)+ ArrayProc[16]);
+                max = (((int)ArrayProc[12]*10)+ (int)ArrayProc[13]);
+                min = (((int)ArrayProc[15]*10)+ (int)ArrayProc[16]);
             }
         }
         //CONSULTA A DISPOSITIVO [CO,1,00001,XX,XX]e
